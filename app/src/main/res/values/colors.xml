@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#89ac2f</color>
+    <color name="colorPrimaryDark">#d1d3d4</color>
+    <color name="colorAccent">#30a7b1</color>
+    <color name="button_color">#89ac2f</color>
+    <color name="dar_button_color">#595a5c</color>
+    <color name="register_btn_color">#30a7b1</color>
+    <color name="nav_header_background">#e6e6e6</color>
+    <color name="dialogbackground">#0cffffff</color>
+    <color name="dropback">#FF989898</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="startblue">#3BB9FF</color>
+    <color name="dark_blue">#0852f1</color>
+    <color name="graylight">#E5E4E2</color>
+    <color name="lightskyblue">#00aeef</color>
+    <color name="green">#34FD3D</color>
+    <color name="airtelText">#009688</color>
+    <color name="bitBlack">#c6c3c6</color>
+    <color name="bitGreen">#afbcd4</color>
+    <color name="centerOrange">#fa5e5e</color>
+    <color name="darkGreen">#228a52</color>
+    <color name="darkGreen1">#54228a52</color>
+    <color name="darkTimeout">#137A81</color>
+    <color name="defaultColor">#fcfbfb</color>
+    <color name="btn1">#e62e57</color>
+    <color name="btn2">#03aebf</color>
+    <color name="btn3">#e3752d</color>
+    <color name="btn4">#8dae3e</color>
+    <color name="btn5">#82b496</color>
+    <color name="btn6">#3e6eb5</color>
+    <color name="kotakBlue">#003874</color>
+    <color name="kotakRed">#ED1C24</color>
+    <color name="kotakRedDisable">#b1ed1c4d</color>
+    <color name="lightBlack">#393739</color>
+    <color name="lightDarkGreen">#43af75</color>
+    <color name="lightRed">#f53138</color>
+    <color name="lightWhite">#fdfdfd</color>
+    <color name="littleMoreBlack">#c2c0c2</color>
+    <color name="littleblack">#f7f6f6</color>
+    <color name="myWindowBackground">#DFDFDF</color>
+    <color name="onselect">#0e4ba7</color>
+    <color name="resend_otp">#fbbc05</color>
+    <color name="resend_otp1">#54fbbc05</color>
+    <color name="snackBarColor">#ec6b43</color>
+    <color name="spinnerColor">#e5e5e5</color>
+    <color name="transp">#00ff00ff</color>
+    <color name="transpD">#55000000</color>
+    <color name="black">#000000</color>
+    <color name="transp_black">#81000000</color>
+
+</resources>
+
+
+

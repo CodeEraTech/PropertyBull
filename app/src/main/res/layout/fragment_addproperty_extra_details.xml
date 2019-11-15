@@ -1,0 +1,475 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.doomshell.property_bull.Addproperty_extraDetails">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:weightSum="8"
+     android:orientation="vertical">
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         android:gravity="center">
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:textAppearance="@style/TextAppearance.FontPath"
+             android:text="Little More Information About Your Property"
+             android:textColor="#000"/>
+     </LinearLayout>
+
+
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="5"
+         android:weightSum="7"
+         android:orientation="vertical">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:orientation="horizontal"
+             android:weightSum="1">
+             <TextView
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="0.50"
+                 android:text="Property Face"
+                 android:textColor="#000"
+                 android:textAppearance="@style/TextAppearance.FontPath"
+                 android:gravity="center"/>
+
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="0.50"
+                 android:orientation="horizontal"
+                 android:gravity="center">
+
+                 <Spinner
+                     android:textAppearance="@style/TextAppearance.FontPath"
+                     android:id="@+id/add_propertyface_spiner"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_margin="2dp"/>
+
+             </LinearLayout>
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:orientation="horizontal"
+             android:weightSum="1">
+             <TextView
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="0.50"
+                 android:text="Flooring"
+                 android:textColor="#000"
+                 android:textAppearance="@style/TextAppearance.FontPath"
+                 android:gravity="center"/>
+
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="0.50"
+                 android:orientation="horizontal"
+                 android:weightSum="1">
+
+                 <Spinner
+                     android:id="@+id/add_flooring_spiner"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:textAppearance="@style/TextAppearance.FontPath"
+                     android:layout_margin="2dp"/>
+
+             </LinearLayout>
+         </LinearLayout>
+
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:orientation="horizontal"
+             android:weightSum="1">
+             <TextView
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="0.50"
+                 android:text="Rooms"
+                 android:textAppearance="@style/TextAppearance.FontPath"
+                 android:textColor="#000"
+                 android:gravity="center"/>
+
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="0.50"
+                 android:orientation="horizontal"
+                 android:weightSum="1">
+
+                 <TextView
+                     android:id="@+id/room_minus"
+                     android:layout_width="0dp"
+                     android:textAppearance="@style/TextAppearance.FontPath"
+                     android:layout_height="match_parent"
+                     android:layout_weight="0.25"
+                     android:text="-"
+                     android:gravity="center"/>
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_margin="2dp"
+                     android:layout_weight="0.50"
+
+
+
+
+                     android:textAppearance="@style/TextAppearance.FontPath"
+                     android:background="@drawable/edittext_bg"
+                     android:gravity="center_vertical">
+
+
+
+                 <TextView
+                     android:id="@+id/add_room_txt"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1"
+
+                     android:text="0"
+                     android:textAppearance="@style/TextAppearance.FontPath"
+                     android:textColor="#000"
+
+
+
+                     android:gravity="center"/>
+                     </LinearLayout>
+
+                 <TextView
+                     android:id="@+id/room_plus"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:textAppearance="@style/TextAppearance.FontPath"
+                     android:layout_weight="0.25"
+                     android:text="+"
+                     android:gravity="center"/>
+
+             </LinearLayout>
+         </LinearLayout>
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:orientation="horizontal"
+             android:weightSum="1">
+             <TextView
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="0.50"
+                 android:textAppearance="@style/TextAppearance.FontPath"
+                 android:text="Bathroom"
+                 android:textColor="#000"
+                 android:gravity="center"/>
+
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="0.50"
+                 android:orientation="horizontal"
+                 android:weightSum="1">
+
+                 <TextView
+                     android:id="@+id/bathroom_minus"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="0.25"
+                     android:textAppearance="@style/TextAppearance.FontPath"
+                     android:text="-"
+                     android:gravity="center"/>
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_margin="2dp"
+                     android:layout_weight="0.50"
+
+
+
+                     android:textAppearance="@style/TextAppearance.FontPath"
+                     android:background="@drawable/edittext_bg"
+                     android:gravity="center_vertical">
+
+                 <TextView
+                     android:id="@+id/add_bathroom_txt"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_weight="0.50"
+                     android:textAppearance="@style/TextAppearance.FontPath"
+                     android:text="0"
+                     android:textColor="#000"
+
+
+                     android:gravity="center"/>
+                     </LinearLayout>
+
+                 <TextView
+                     android:id="@+id/bathroom_plus"
+                     android:layout_width="0dp"
+                     android:textAppearance="@style/TextAppearance.FontPath"
+                     android:layout_height="match_parent"
+                     android:layout_weight="0.25"
+                     android:text="+"
+                     android:gravity="center"/>
+
+             </LinearLayout>
+         </LinearLayout>
+
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:orientation="horizontal"
+             android:weightSum="1">
+             <TextView
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="0.50"
+                 android:text="Total Floors"
+                 android:textAppearance="@style/TextAppearance.FontPath"
+                 android:textColor="#000"
+                 android:gravity="center"/>
+
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="0.50"
+                 android:orientation="horizontal"
+                 android:weightSum="1">
+
+                 <TextView
+                     android:id="@+id/totalfloor_minus"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="0.25"
+                     android:textAppearance="@style/TextAppearance.FontPath"
+                     android:text="-"
+                     android:gravity="center"/>
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_margin="2dp"
+                     android:layout_weight="0.50"
+
+
+
+                     android:textAppearance="@style/TextAppearance.FontPath"
+                     android:background="@drawable/edittext_bg"
+                     android:gravity="center_vertical">
+
+                 <TextView
+                     android:id="@+id/add_totalfloors_txt"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_weight="0.50"
+                     android:text="0"
+                     android:textColor="#000"
+                     android:textAppearance="@style/TextAppearance.FontPath"
+
+
+                     android:gravity="center"/>
+                     </LinearLayout>
+
+                 <TextView
+                     android:id="@+id/totalfloor_plus"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="0.25"
+                     android:text="+"
+                     android:textAppearance="@style/TextAppearance.FontPath"
+                     android:gravity="center"/>
+
+             </LinearLayout>
+         </LinearLayout>
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:orientation="horizontal"
+             android:weightSum="1">
+             <TextView
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="0.50"
+                 android:text="Property On Floor"
+                 android:textAppearance="@style/TextAppearance.FontPath"
+                 android:textColor="#000"
+                 android:gravity="center"/>
+
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="0.50"
+                 android:orientation="horizontal"
+                 android:weightSum="1">
+
+                 <TextView
+                     android:id="@+id/pon_floor_minus"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:textAppearance="@style/TextAppearance.FontPath"
+                     android:layout_weight="0.25"
+                     android:text="-"
+                     android:gravity="center"/>
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_margin="2dp"
+                     android:layout_weight="0.50"
+
+
+
+                     android:textAppearance="@style/TextAppearance.FontPath"
+                     android:background="@drawable/edittext_bg"
+                     android:gravity="center_vertical">
+
+                 <TextView
+                     android:id="@+id/add_pon_floor_txt"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:textAppearance="@style/TextAppearance.FontPath"
+                     android:layout_weight="0.50"
+                     android:text="0"
+                     android:textColor="#000"
+
+                     android:gravity="center"/>
+                     </LinearLayout>
+
+                 <TextView
+                     android:id="@+id/pon_floor_plus"
+                     android:layout_width="0dp"
+                     android:textAppearance="@style/TextAppearance.FontPath"
+                     android:layout_height="match_parent"
+                     android:layout_weight="0.25"
+                     android:text="+"
+                     android:gravity="center"/>
+
+             </LinearLayout>
+         </LinearLayout>
+
+
+         <LinearLayout
+             android:visibility="gone"
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:orientation="horizontal"
+             android:weightSum="1">
+             <TextView
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="0.50"
+                 android:text="Age Of Property"
+                 android:textAppearance="@style/TextAppearance.FontPath"
+                 android:textColor="#000"
+                 android:gravity="center"/>
+
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="0.50"
+                 android:orientation="horizontal"
+                 android:weightSum="1">
+
+                 <TextView
+                     android:id="@+id/age_minus"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="0.25"
+                     android:text="-"
+                     android:textAppearance="@style/TextAppearance.FontPath"
+                     android:gravity="center"/>
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_margin="2dp"
+                     android:layout_weight="0.50"
+
+
+
+                     android:textAppearance="@style/TextAppearance.FontPath"
+                     android:background="@drawable/edittext_bg"
+                     android:gravity="center_vertical">
+
+                 <TextView
+                     android:id="@+id/add_age_txt"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_weight="0.50"
+                     android:text="0"
+                     android:textAppearance="@style/TextAppearance.FontPath"
+                     android:textColor="#000"
+
+                     android:gravity="center"/>
+                     </LinearLayout>
+
+                 <TextView
+                     android:id="@+id/age_plus"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="0.25"
+                     android:text="+"
+                     android:textAppearance="@style/TextAppearance.FontPath"
+                     android:gravity="center"/>
+
+             </LinearLayout>
+         </LinearLayout>
+
+
+
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="2"
+         android:gravity="center">
+
+         <Button
+             android:id="@+id/add_extra_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textAppearance="@style/TextAppearance.FontPath"
+             android:background="@color/button_color"
+             android:text="Next"
+             android:textColor="#fff"/>
+     </LinearLayout>
+
+
+
+
+
+
+ </LinearLayout>
+
+</FrameLayout>

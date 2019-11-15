@@ -1,0 +1,100 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.Design.Light">
+        <!-- Customize your theme here. -->
+        <item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+
+        <item name="android:editTextStyle">@style/RobotoEditText</item>
+        <item name="android:radioButtonStyle">@style/RobotoRadioStyle</item>
+       <!-- <item name="android:autoCompleteTextViewStyle">@style/RobotoAutocomplete</item>-->
+       <!-- <item name="android:spinnerStyle">@style/RobotoSpinner</item>-->
+
+    </style>
+    <style name="ThemeDialogCustom" >
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="TextAppearance.FontPath" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/RobotoCondensed-Regular.ttf</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#000000</item>
+
+    </style>
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily"></item>
+    </style>
+    <style name="AppTheme.Widget.TextView" parent="android:Widget.Holo.Light.TextView">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+    </style>
+   <!-- <style name="RobotoSpinner" parent="android:Widget.Spinner">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>-->
+  <!--  <style name="RobotoAutocomplete" parent="android:Widget.AutoCompleteTextView">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>-->
+    <style name="RobotoRadioStyle" parent="android:Widget.CompoundButton.RadioButton">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="RobotoEditText" parent="android:Widget.EditText">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!--<style name="RobotoButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>-->
+
+    <style name="myDialog" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/button_color</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorAccent">@color/cardview_shadow_start_color</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="colorAccent">@color/button_color</item>
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">#000000</item>
+        <!-- Used for the background -->
+        <item name="android:background">#ffffff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="MyDialogTheme" parent="android:Theme.Dialog">
+        <!-- Fill the screen -->
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+
+        <!-- Just to prove it's working -->
+        <item name="android:background">#ffffff</item>
+    </style>
+    <style name="myUpdateDialog" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/logo_logo" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="16dp"
+            app:cardElevation="8dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_title_verify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_horizontal"
+                        android:hint="Verify Otp"
+                        android:textColorHint="#000"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_mobile_no_verify"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="4dp"
+                            android:text="Mobile number"
+                            android:textAppearance="@style/TextAppearance.FontPath"></TextView>
+
+                        <TextView
+                            android:id="@+id/otp_mobilenumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="4dp"
+                            android:gravity="center"
+                            android:text="xxxxxxxxxx"
+                            android:textAppearance="@style/TextAppearance.FontPath"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold"
+
+                            ></TextView>
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/otp_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:hint="Enter Otp"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_resend_otp_verify"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:id="@+id/resend_otp_btn"
+                            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Resend"
+                            android:textColorHint="#fff" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_time_otp_verify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:text="01:00" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ProgressBar
+                                android:id="@+id/pb_back_verify"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerInParent="true"
+                                android:visibility="gone" />
+
+                            <Button
+                                android:id="@+id/back_btn"
+                                style="@style/Base.Widget.AppCompat.Button.Colored"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:text="Back"
+                                android:textColorHint="#fff" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ProgressBar
+                                android:id="@+id/pb_send_otp_verify"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerInParent="true"
+                                android:visibility="gone" />
+
+                            <Button
+                                android:id="@+id/verify_otp_btn"
+                                style="@style/Base.Widget.AppCompat.Button.Colored"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:text="Verify"
+                                android:textColorHint="#fff" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

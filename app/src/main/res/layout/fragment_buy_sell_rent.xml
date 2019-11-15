@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/post_home_round" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="So, You Are Looking To Post \n \t \t \t Your Property For"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="#000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:weightSum="2">
+
+                    <RadioGroup
+                        android:id="@+id/rg_postSC1_option1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:weightSum="2">
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/radio_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="Sell"
+                            android:textAppearance="@style/TextAppearance.FontPath"
+                            android:textColor="@drawable/radio_txt_color" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/radio_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="Rent"
+                            android:textAppearance="@style/TextAppearance.FontPath"
+                            android:textColor="@drawable/radio_txt_color" />
+
+                    </RadioGroup>
+
+
+                    <RadioGroup
+                        android:id="@+id/rg_postSC1_option2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:weightSum="2">
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/radio_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="Residential"
+                            android:textAppearance="@style/TextAppearance.FontPath"
+                            android:textColor="@drawable/radio_txt_color" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/radio_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="Commercial"
+                            android:textAppearance="@style/TextAppearance.FontPath"
+                            android:textColor="@drawable/radio_txt_color" />
+
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/add_sc1_next"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:backgroundTint="@color/button_color"
+                        android:text="Next"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.50"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/activity_horizontal_margin">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/button_color"
+                        android:text="Next"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        android:textColor="#fff" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

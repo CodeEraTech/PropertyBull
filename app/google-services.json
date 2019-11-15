@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "669274049165",
+    "firebase_url": "https://propertybull-18d43.firebaseio.com",
+    "project_id": "propertybull-18d43",
+    "storage_bucket": "propertybull-18d43.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669274049165:android:312b216008a11134",
+        "android_client_info": {
+          "package_name": "com.doomshell.property_bull"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669274049165-032d44n0h9460n45602ddl396sl5cecv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDs_iKwyYly7QrQON-T8CPMwSWNxaWCrHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669274049165-032d44n0h9460n45602ddl396sl5cecv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

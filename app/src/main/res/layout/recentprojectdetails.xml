@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recentprojectdetaillayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingTop="5dip">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight=".90">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/photorg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+
+                    android:weightSum="1">
+
+                    <RadioButton
+                        android:id="@+id/r_photo"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dip"
+                        android:layout_weight=".5"
+                        android:background="@drawable/radio_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="5dip"
+                        android:text="Photos"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        android:textColor="@drawable/radio_txt_color" />
+
+                    <RadioButton
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:background="@drawable/radio_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="5dip"
+                        android:text="Floor Plan"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+
+                        android:textColor="@drawable/radio_txt_color" />
+                </RadioGroup>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+
+                    <ImageButton
+                        android:id="@+id/left_nav"
+                        android:layout_width="30dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_vertical|left"
+                        android:backgroundTint="@color/button_color"
+                        android:src="@drawable/ic_action_backarrow" />
+
+                    <ImageButton
+                        android:id="@+id/right_nav"
+                        android:layout_width="30dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_vertical|right"
+                        android:backgroundTint="@color/button_color"
+                        android:src="@drawable/ic_action_forwardarrow" />
+
+                </FrameLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    custom:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dip">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dip"
+                            android:paddingBottom="5dip"
+                            android:text="Project Details"
+                            android:textAppearance="@style/TextAppearance.FontPath"
+
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".40"
+                                android:text="Project"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="@color/button_color" />
+
+                            <TextView
+                                android:id="@+id/projectname"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".60"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".40"
+                                android:text="Builder"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="@color/button_color" />
+
+                            <TextView
+                                android:id="@+id/builder"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".60"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".40"
+                                android:text="Price"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="@color/button_color" />
+
+                            <TextView
+                                android:id="@+id/price"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".60"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".40"
+                                android:text="Type"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="@color/button_color" />
+
+                            <TextView
+                                android:id="@+id/type"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".60"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".40"
+                                android:text="Area"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="@color/button_color" />
+
+                            <TextView
+                                android:id="@+id/area"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".60"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".40"
+                                android:text="Landmark"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="@color/button_color" />
+
+                            <TextView
+                                android:id="@+id/landmark"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".60"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/roomlyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".40"
+                                android:text="No. Of Room"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="@color/button_color" />
+
+                            <TextView
+                                android:id="@+id/room"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".60"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/bathroomlyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".40"
+                                android:text="No. Of Bathroom"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="@color/button_color" />
+
+                            <TextView
+                                android:id="@+id/bathroom"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".60"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/floorlyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".40"
+                                android:text="No. Of Floor"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="@color/button_color" />
+
+                            <TextView
+                                android:id="@+id/floor"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".60"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dip"
+
+                    custom:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="5dip">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dip"
+                            android:paddingBottom="5dip"
+                            android:text="Property Location"
+                            android:textAppearance="@style/TextAppearance.FontPath"
+
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <FrameLayout
+                            android:id="@+id/mapframe"
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp">
+
+                            <Button
+                                android:layout_gravity="end"
+                                android:id="@+id/btnLocation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Locate Me" />
+                            <com.google.android.gms.maps.MapView
+                                android:id="@+id/map"
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp" />
+
+                        </FrameLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    custom:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/button_color"
+                            android:orientation="horizontal"
+                            android:padding="5dip"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="center"
+                                android:text="Flat Type"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="#ffffff" />
+
+                            <TextView
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="center"
+                                android:text="Area"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dip"
+                            android:weightSum="1"
+
+                            >
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/projecttetails"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                            </android.support.v7.widget.RecyclerView>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/featurelyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+
+                    custom:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btn_contact_now"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimary"
+
+                            android:padding="2dp"
+                            android:text="contact us" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/button_color"
+                            android:orientation="horizontal"
+                            android:padding="5dip"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Features"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="#ffffff" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dip"
+                            android:weightSum="1"
+
+                            >
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/featurerecycler"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                            </android.support.v7.widget.RecyclerView>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin_half"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin_half"
+                    android:paddingRight="@dimen/activity_horizontal_margin_half">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin_half"
+                        android:text="Similar Projects"
+                        android:textStyle="bold"
+                        tools:text="Similar pro" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/similar_projects_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.10"
+            android:visibility="gone">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/detail_viewcontact_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.50"
+                    android:background="@color/dar_button_color"
+                    android:text="View Contact"
+
+                    android:textAppearance="@style/TextAppearance.FontPath"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/detail_sendmsg_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.50"
+                    android:background="@color/dar_button_color"
+                    android:text="Send Message"
+                    android:textAppearance="@style/TextAppearance.FontPath"
+                    android:textColor="#fff" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/detail_callbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_detailscallbtn" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/share_recent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@android:drawable/ic_menu_share"
+        android:visibility="gone" />
+
+</android.support.design.widget.CoordinatorLayout>

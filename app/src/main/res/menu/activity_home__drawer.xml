@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Home"
+            android:icon="@drawable/nav_ic_home"
+            android:title="Home"
+            />
+        <item
+            android:id="@+id/nav_Search"
+
+            android:icon="@drawable/nav_ic_search"
+            android:title="Search Properties" />
+        <item
+            android:id="@+id/nav_saved"
+
+            android:icon="@drawable/nav_ic_addrequirement"
+            android:title="Saved Search" />
+        <item
+            android:id="@+id/nav_Recent_Projects"
+            android:icon="@drawable/nav_ic_recentproject"
+            android:title="Recent Projects" />
+        <item
+            android:id="@+id/nav_ic_shortlist"
+            android:icon="@drawable/nav_ic_shortlist"
+            android:title="Shortlisted" />
+
+        <item
+            android:id="@+id/nav_Add_Property"
+            android:icon="@drawable/nav_ic_add_property"
+            android:title="Add Property" />
+        <item
+            android:id="@+id/nav_Property"
+            android:icon="@drawable/nav_ic_properties"
+            android:title="My Properties" />
+        <item
+            android:id="@+id/nav_Add_Requirment"
+            android:icon="@drawable/nav_ic_addrequirement"
+            android:title="Add Requirement" />
+        <item
+            android:id="@+id/nav_myrequirement"
+            android:icon="@drawable/nav_ic_recentproject"
+            android:title="My Requirements" />
+
+        <!--<item-->
+            <!--android:id="@+id/nav_service"-->
+            <!--android:icon="@drawable/nav_ic_addrequirement"-->
+            <!--android:title="Service Providers " />-->
+
+
+        <item
+            android:icon="@drawable/nav_ic_faq"
+            android:title="Help"
+            android:id="@+id/nav_faq"/>
+
+        <item
+            android:id="@+id/nav_ic_rateus"
+            android:icon="@drawable/nav_ic_rateus"
+            android:title="Rate Us" />
+
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/nav_ic_logout"
+            android:title="Logout" />
+
+    </group>
+
+</menu>

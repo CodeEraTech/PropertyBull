@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.90"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingRight="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="TERMS AND CONDITIONS"
+                android:textColor="@color/button_color"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="none"
+                android:scrollHorizontally="false"
+                android:singleLine="false"
+                android:text="Welcome to the propertybull.com real estate portal.
+
+This website www.propertybull.com, (“The SITE”) is owned, hosted and operated by IBASE NETWORKS PRIVATE LIMITED (“The Company”) a company incorporated in India under the Companies Act, 2013 having its registered office at 603, Milestone Building, Tonk Road, JAIPUR (Raj.)
+
+Disclaimer
+
+About using propertybull.com (hereinafter referred to as this SITE By using this SITE you are accepting all the terms of this disclaimer notice. If you do not agree with anything in this notice
+
+            You should not use this SITE.
+
+            Warranties and Liability
+
+            While every effort is made to ensure that the content of this SITE is accurate. The SITE is provided as is and we make no representations or warranties in relation to the accuracy or completeness of the information found on it. While the content of this SITE is provided in good faith. We do not warrant that the information will be kept up to date. Be true and not misleading. Or that this SITE will always (or ever) be available for use.
+
+            We do not warrant that the servers that make this SITE available will be error, virus or bug free and you accept that it is your responsibility to make adequate provision for protection against such threats. We recommend scanning any files
+
+            Before downloading.
+
+            Nothing on this SITE should be taken to constitute professional advice or a formal recommendation and we exclude all representations and warranties relating to the content and use of this SITE.
+
+            In no event will this SITE be liable for any incidental, indirect. Consequential or special damages of any kind. Or any
+
+            Damages what so ever including without limitation those resulting from loss of profit, loss of contracts, Goodwill, Data information, Income Anticipated savings or business relationships, whether or not advised of the possibility of such damage. Arising out of or in connection with the use of this SITE or any linked websites.Exceptions
+
+            Nothing in this disclaimer notice excludes or limits any warranty implied by law for death, fraud, Personal injury through negligence or anything else which it would not be lawful to exclude.
+
+            License to Use This Website
+
+            By using this website you agree to the exclusions and limitations of liability stated above and accept them as reasonable.
+
+            Do not use this SITE if you do not agree that they are reasonable.
+
+            If any of the points in this disclaimer notice are found to be unenforceable under applicable law. Then they will have no bearing on the enforceability of the rest of the disclaimer notice.
+
+            Material on this SITE, including text and images, is protected by copyright law and is copyright to us unless credited otherwise. It may not be copied, reproduced, republished, downloaded, posted, broadcast or transmitted in any way except for your own personal, non-commercial use.
+
+            Prior written consent of the copyright holder must be obtained for any other use of material. No part of this SITE may be distributed or copied for any commercial purpose or financial gain. All intellectual property rights in relation to this SITE are reserved and owned by us.
+
+            Links to Other websites and Products
+
+            Links to other websites are provided for the convenience of users. We are unable to provide any warranty regarding the accuracy or completeness of the content of such sites, or the reliability, quality or effectiveness of any products provided through external websites. A link to an external site does not imply an endorsement of the views, information or products provided or held by such websites.
+
+            Law and Jurisdiction
+
+            This disclaimer notice shall be interpreted and governed by Indian law, and any disputes in relation to it are subject to the jurisdiction of the courts in JAIPUR, (Raj.) and INDIA.
+
+            Variations
+
+            We reserve the right to revise and amend this disclaimer notice from time to time and any revised version will be deemed to be applicable from the first date of publication on this website."
+                android:textColor="@color/register_btn_color" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.10"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bull_policy_dismiss"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/button_color"
+            android:text="Dismiss"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+</LinearLayout>

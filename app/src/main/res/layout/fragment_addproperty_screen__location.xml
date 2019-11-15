@@ -1,0 +1,177 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.doomshell.property_bull.Addproperty_screen_Location">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:fillViewport="true"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Where Is Your Property Located ?"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="#000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_bg"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/TextAppearance.FontPath">
+
+
+                <Spinner
+                    android:id="@+id/p3_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:textAppearance="@style/TextAppearance.FontPath" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_bg"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/TextAppearance.FontPath">
+
+
+                <Spinner
+                    android:id="@+id/projectid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:textAppearance="@style/TextAppearance.FontPath" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_bg"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/p3_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:hint="Title"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dip"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.FontPath" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_bg"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/TextAppearance.FontPath">
+
+                <EditText
+                    android:id="@+id/p3_landmark"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:hint="Landmark"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dip"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.FontPath" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_bg"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/p3_pincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:hint="Pincode"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dip"
+                    android:textAppearance="@style/TextAppearance.FontPath" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edittext_bg"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/p3_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:gravity="top"
+                    android:hint="Address"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dip"
+                    android:textAppearance="@style/TextAppearance.FontPath" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/p3_next_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/button_color"
+                    android:text="Next"
+                    android:textAppearance="@style/TextAppearance.FontPath"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

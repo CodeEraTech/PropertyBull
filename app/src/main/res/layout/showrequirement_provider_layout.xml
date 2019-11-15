@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    card_view:cardUseCompatPadding="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+
+    android:background="#ffffff"
+    android:orientation="horizontal">
+                    <LinearLayout
+
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:padding="5dip">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dip"
+
+                                android:layout_height="match_parent"
+                                android:layout_weight=".4"
+                                android:background="#ffffff"
+
+                                android:gravity="left|center"
+                                android:text="Property Type"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="@color/button_color" />
+
+                            <TextView
+                                android:id="@+id/type"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".6"
+                                android:background="#ffffff"
+                                android:gravity="left|center"
+
+                                android:text=""
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/aprtmtlyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dip"
+
+                                android:layout_height="match_parent"
+                                android:layout_weight=".4"
+                                android:background="#ffffff"
+                                android:gravity="left|center"
+
+
+                                android:text="Apartment Type"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="@color/button_color" />
+
+                            <TextView
+                                android:id="@+id/rooms"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".6"
+                                android:background="#ffffff"
+                                android:gravity="left|center"
+
+                                android:text=""
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dip"
+
+                                android:layout_height="match_parent"
+                                android:layout_weight=".4"
+                                android:background="#ffffff"
+                                android:gravity="left|center"
+
+                                android:text="Property Budget"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="@color/button_color" />
+
+                            <TextView
+                                android:id="@+id/budget"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".6"
+                                android:background="#ffffff"
+                                android:gravity="left|center"
+                                android:text=""
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/addresslyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dip"
+
+                                android:layout_height="match_parent"
+                                android:layout_weight=".4"
+                                android:background="#ffffff"
+
+                                android:gravity="left|center"
+                                android:text="Address"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="@color/button_color" />
+
+                            <TextView
+                                android:id="@+id/address"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".6"
+                                android:background="#ffffff"
+                                android:gravity="left|center"
+                                android:text=""
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dip"
+
+                                android:layout_height="match_parent"
+                                android:layout_weight=".4"
+                                android:background="#ffffff"
+                                android:gravity="left|center"
+
+                                android:text="Property Area"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="@color/button_color" />
+
+                            <TextView
+                                android:id="@+id/area"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".6"
+                                android:background="#ffffff"
+                                android:gravity="left|center"
+
+                                android:text=""
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dip"
+
+                                android:layout_height="match_parent"
+                                android:layout_weight=".4"
+                                android:background="#ffffff"
+                                android:gravity="left|center"
+
+                                android:text="Added On"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="@color/button_color" />
+
+                            <TextView
+                                android:id="@+id/date"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".6"
+                                android:background="#ffffff"
+                                android:gravity="left|center"
+
+                                android:text=""
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+</LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/delete_fav_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_cancel"/>
+            <ImageView
+                android:id="@+id/search_fav_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="#000"
+                android:layout_gravity="bottom|right"
+                android:src="@drawable/ic_searchicon"/>
+
+
+
+        </FrameLayout>
+
+
+
+
+</LinearLayout>

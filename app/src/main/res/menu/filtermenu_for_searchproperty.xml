@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="all">
+        <item
+            android:icon="@drawable/common_google_signin_btn_icon_dark_normal"
+            android:title="Filter" />
+    </group>
+
+
+</menu>

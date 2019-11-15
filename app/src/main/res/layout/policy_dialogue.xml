@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:weightSum="1">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.90"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp">
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Privacy"
+        android:textColor="#ff9d02"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/register_btn_color"
+            android:text="This privacy policy sets out how shoponcell uses and protects any information that you give to shoponcell over Phone, Website or Mobile App. Shoponcell is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using this website, then you can be assured that it will only be used in accordance with this privacy statement."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WHAT WE COLLECT"
+            android:textColor="#ff9d02"
+            android:layout_gravity="center_horizontal"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/register_btn_color"
+            android:text="Phone Contact information (Contact Name and Contact Number) "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SECURITY"
+            android:textColor="#ff9d02"
+            android:layout_gravity="center_horizontal"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/register_btn_color"
+            android:text="We are committed to ensuring that your information is secure. In order to prevent unauthorized access or disclosure we have put in place suitable physical,electronic and managerial procedures to safeguard and secure the information we collect online.
+
+We Assure you that we dont Use or distribute the Data of your to Any Third Party"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.10"
+        android:weightSum="1"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/policy_accepted"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:text="Accept"/>
+        <Button
+            android:id="@+id/policy_decline"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:text="Decline"/>
+
+    </LinearLayout>
+</LinearLayout>

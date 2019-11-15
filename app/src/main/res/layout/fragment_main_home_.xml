@@ -1,0 +1,307 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.doomshell.property_bull.MainHome_Frag">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="0.65"
+            android:visibility="visible"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rVhome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                </android.support.v7.widget.RecyclerView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/button1"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.3"
+                        android:background="#e62e57"
+                        android:orientation="vertical"
+                        android:padding="10dip"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="15dip"
+                            android:src="@drawable/searchproperty" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Search\n Properties"
+                            android:textAppearance="@style/TextAppearance.FontPath"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:id="@+id/button2"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight=".3"
+                        android:background="#03aebf"
+                        android:orientation="vertical"
+                        android:padding="10dip"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="15dip"
+                            android:src="@drawable/addproperty" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Post Property \nFor Free"
+                            android:textAppearance="@style/TextAppearance.FontPath"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/button5"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight=".5"
+                        android:background="#e3752d"
+                        android:orientation="vertical"
+                        android:padding="10dip"
+                        android:visibility="visible"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="15dip"
+                            android:src="@drawable/recentproject" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Recent Projects"
+                            android:textAppearance="@style/TextAppearance.FontPath"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/button6"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight=".5"
+                        android:background="#8dae3e"
+                        android:orientation="vertical"
+                        android:padding="15dip"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="5dip"
+                            android:src="@drawable/myrequirement" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="My\n Requirements"
+                            android:textAppearance="@style/TextAppearance.FontPath"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/button3"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight=".5"
+                        android:background="#82b496"
+                        android:orientation="vertical"
+                        android:padding="10dip"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="15dip"
+                            android:src="@drawable/viewproperty" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="My\n Properties"
+                            android:textAppearance="@style/TextAppearance.FontPath"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+                    <!--<LinearLayout
+                        android:id="@+id/button6"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight=".5"
+                        android:background="#8dae3e"
+                        android:orientation="vertical"
+                        android:padding="15dip"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="5dip"
+                            android:src="@drawable/myrequirement" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="My\n Requirements"
+                            android:textAppearance="@style/TextAppearance.FontPath"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>-->
+                    <!--<LinearLayout
+                        android:id="@+id/button4"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:padding="10dip"
+                        android:background="#3e6eb5"
+                        android:weightSum="1"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="1"
+                            android:padding="15dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/serviceprovider"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textAppearance="@style/TextAppearance.FontPath"
+                            android:textColor="#ffffff"
+                            android:text="View Service\n Providers"/>
+                    </LinearLayout>-->
+                    <LinearLayout
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:background="#3e6eb5"
+                        android:orientation="vertical"
+                        android:padding="10dip"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="15dip"
+                            android:src="@drawable/homeloan" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Home\nLoan"
+                            android:textAppearance="@style/TextAppearance.FontPath"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_weight="0.5">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/home_recent_property_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:scrollbars="none"
+                app:reverseLayout="false">
+            </android.support.v7.widget.RecyclerView>
+</LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.doomshell.property_bull.PropertyDetails">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.90"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:id="@+id/property_img_relative_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:orientation="horizontal">
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/slider"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <ImageButton
+                            android:id="@+id/left_nav"
+                            android:layout_width="30dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center_vertical|left"
+                            android:backgroundTint="@color/button_color"
+                            android:src="@drawable/ic_action_backarrow" />
+
+                        <ImageButton
+                            android:id="@+id/right_nav"
+                            android:layout_width="30dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center_vertical|right"
+                            android:backgroundTint="@color/button_color"
+                            android:src="@drawable/ic_action_forwardarrow" />
+
+                    </FrameLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin_half"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/detail_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        android:textColor="@color/button_color"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detail_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=" 3 BHK \u25CF Apartment \u25CF Ready to move"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        android:textColor="#000" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:background="@color/nav_header_background">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@color/nav_header_background"
+                        android:orientation="vertical"
+
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/nav_header_background"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".5"
+                                    android:orientation="vertical"
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="1dip"
+                                        android:text="Property Id"
+                                        android:textAppearance="@style/TextAppearance.FontPath"
+
+
+                                        android:textColor="@color/button_color" />
+
+                                    <TextView
+                                        android:id="@+id/detail_builtup"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="1dip"
+
+
+                                        android:textAppearance="@style/TextAppearance.FontPath"
+                                        android:textColor="#000000" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".5"
+                                    android:orientation="vertical"
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:padding="1dip"
+                                        android:text="Posted By"
+                                        android:textAppearance="@style/TextAppearance.FontPath"
+                                        android:textColor="@color/button_color" />
+
+                                    <TextView
+                                        android:id="@+id/detail_postedby"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:padding="1dip"
+
+                                        android:textAppearance="@style/TextAppearance.FontPath"
+                                        android:textColor="#000000" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorPrimaryDark"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/nav_header_background"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        android:layout_width="0dip"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".5"
+                                        android:padding="1dip"
+                                        android:text="Total Area"
+                                        android:textAppearance="@style/TextAppearance.FontPath"
+                                        android:textColor="@color/button_color" />
+
+                                    <TextView
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".5"
+                                        android:padding="1dip"
+                                        android:text="Landmark/Locality"
+                                        android:textAppearance="@style/TextAppearance.FontPath"
+                                        android:textColor="@color/button_color" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        android:id="@+id/detail_priceper_unit"
+                                        android:layout_width="0dip"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".5"
+                                        android:padding="1dip"
+                                        android:textAppearance="@style/TextAppearance.FontPath"
+
+                                        android:textColor="#000000" />
+
+                                    <TextView
+                                        android:id="@+id/detail_bedroom"
+                                        android:layout_width="0dip"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".5"
+                                        android:padding="1dip"
+                                        android:textAppearance="@style/TextAppearance.FontPath"
+                                        android:textColor="#000000" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/bathfloorlyttop"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:orientation="vertical"></LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/bathfloorlyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/nav_header_background"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:id="@+id/bathlyt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical"
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:padding="1dip"
+                                        android:text="Bathroom"
+                                        android:textAppearance="@style/TextAppearance.FontPath"
+                                        android:textColor="@color/button_color" />
+
+                                    <TextView
+                                        android:id="@+id/bathroom"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="1dip"
+                                        android:textAppearance="@style/TextAppearance.FontPath"
+                                        android:textColor="#000000" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/flooringlyt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical"
+                                    android:visibility="visible"
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="1dip"
+                                        android:text="Flooring"
+                                        android:textAppearance="@style/TextAppearance.FontPath"
+                                        android:textColor="@color/button_color" />
+
+                                    <TextView
+                                        android:id="@+id/flooring"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="1dip"
+                                        android:textAppearance="@style/TextAppearance.FontPath"
+                                        android:textColor="#000000" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:id="@+id/floorpfloortop"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:orientation="vertical"></LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/floorpfloor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/nav_header_background"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:id="@+id/tfloorlyt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical"
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:padding="1dip"
+                                        android:text="Total Floor"
+                                        android:textAppearance="@style/TextAppearance.FontPath"
+                                        android:textColor="@color/button_color" />
+
+                                    <TextView
+                                        android:id="@+id/floor"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="1dip"
+                                        android:textAppearance="@style/TextAppearance.FontPath"
+                                        android:textColor="#000000" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/pfloorlyt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical"
+                                    android:visibility="visible"
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="1dip"
+                                        android:text="Property On Floor"
+                                        android:textAppearance="@style/TextAppearance.FontPath"
+                                        android:textColor="@color/button_color" />
+
+                                    <TextView
+                                        android:id="@+id/p_floor"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="1dip"
+                                        android:textAppearance="@style/TextAppearance.FontPath"
+                                        android:textColor="#000000" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorPrimaryDark"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/nav_header_background"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical"
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:padding="1dip"
+                                        android:text="Address"
+                                        android:textAppearance="@style/TextAppearance.FontPath"
+                                        android:textColor="@color/button_color" />
+
+                                    <TextView
+                                        android:id="@+id/detail_society"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="1dip"
+                                        android:textAppearance="@style/TextAppearance.FontPath"
+                                        android:textColor="#000000" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/depositlyt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical"
+                                    android:visibility="gone"
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="1dip"
+                                        android:text="Deposit"
+                                        android:textAppearance="@style/TextAppearance.FontPath"
+                                        android:textColor="@color/button_color" />
+
+                                    <TextView
+                                        android:id="@+id/deposit"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="1dip"
+                                        android:textAppearance="@style/TextAppearance.FontPath"
+                                        android:textColor="#000000" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorPrimaryDark"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/nav_header_background"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical"
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        android:id="@+id/descrioption"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="1dip"
+                                        android:text="Description"
+                                        android:textAppearance="@style/TextAppearance.FontPath"
+                                        android:textColor="@color/button_color" />
+
+                                    <TextView
+                                        android:id="@+id/detail_desc"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="1dip"
+                                        android:textAppearance="@style/TextAppearance.FontPath"
+                                        android:textColor="#000000" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dip"
+                    custom:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="5dip">
+
+                        <Button
+                            android:id="@+id/btn_contact_now"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimary"
+
+                            android:padding="2dp"
+                            android:text="contact us" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dip"
+                            android:paddingBottom="5dip"
+                            android:text="Project Location"
+                            android:textAppearance="@style/TextAppearance.FontPath"
+
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <FrameLayout
+                            android:id="@+id/mapframe"
+                            android:layout_width="match_parent"
+                            android:layout_height="300dip">
+
+                            <Button
+                                android:layout_gravity="end"
+                                android:id="@+id/btnLocation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Locate Me" />
+                            <RelativeLayout
+                                android:id="@+id/rlframe"
+                                android:layout_width="match_parent"
+                                android:layout_height="300dip">
+
+
+                                <com.google.android.gms.maps.MapView
+                                    android:id="@+id/map"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="300dp" />
+
+                            </RelativeLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin_half"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin_half"
+                    android:paddingRight="@dimen/activity_horizontal_margin_half">
+
+                    <TextView
+                        android:id="@+id/similartext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin_half"
+                        android:text="Similar Propertites"
+                        android:textStyle="bold"
+                        tools:text="Similar Propertites" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/similar_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:nestedScrollingEnabled="false"
+                        android:paddingBottom="40dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!--bottom buttons starts now -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.10"
+            android:visibility="gone">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/detail_viewcontact_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.50"
+                    android:background="@color/dar_button_color"
+                    android:text="View Contact"
+
+                    android:textAppearance="@style/TextAppearance.FontPath"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/detail_sendmsg_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.50"
+                    android:background="@color/dar_button_color"
+                    android:text="Send Message"
+                    android:textAppearance="@style/TextAppearance.FontPath"
+                    android:textColor="#fff" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/detail_callbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_detailscallbtn" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/share_fab_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@android:drawable/ic_menu_share"
+        android:visibility="gone"
+        app:layout_anchor="@+id/linearLayout"
+        app:layout_anchorGravity="bottom|right" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dip"
+    android:background="#ffffff"
+    tools:context="com.doomshell.property_bull.Service_provider">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+android:layout_weight=".07"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rg_option"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <RadioButton
+                android:id="@+id/buy"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Buy"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:checked="true"
+
+
+                android:background="@drawable/radio_selector"
+                android:textColor="@drawable/radio_txt_color"
+                android:button="@null"
+                android:layout_weight="0.50"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                />
+            <RadioButton
+                android:id="@+id/rent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Rent"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:background="@drawable/radio_selector"
+                android:textColor="@drawable/radio_txt_color"
+                android:button="@null"
+                android:layout_weight="0.50"
+                android:layout_marginLeft="2dp"
+                android:gravity="center"
+                />
+        </RadioGroup>
+
+    </LinearLayout>
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight=".93">
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/ourservice_recycleview"
+        android:textAppearance="@style/TextAppearance.FontPath"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+</FrameLayout>

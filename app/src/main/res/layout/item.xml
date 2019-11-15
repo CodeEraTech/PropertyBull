@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="#00ffffff"
+    android:layout_height="wrap_content">
+
+   <!-- <property_bulll.helper.TouchImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitCenter" />-->
+    <com.doomshell.property_bull.helper.ImageViewTouchViewPager
+        android:background="#00ffffff"
+        android:id="@+id/slider"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitCenter"  />
+
+
+
+</RelativeLayout>

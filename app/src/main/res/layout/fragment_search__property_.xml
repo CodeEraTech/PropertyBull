@@ -1,0 +1,736 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.doomshell.property_bull.Search_Property_Frag">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight=".85"
+
+        android:fillViewport="true"
+        android:scrollbars="none"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="6">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/rg_option"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <RadioButton
+                            android:id="@+id/rb_buy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="0.50"
+                            android:background="@drawable/radio_selector"
+                            android:button="@null"
+                            android:checked="false"
+                            android:gravity="center"
+                            android:padding="@dimen/activity_horizontal_margin_half"
+                            android:text="Buy"
+                            android:textAppearance="@style/TextAppearance.FontPath"
+                            android:textColor="@drawable/radio_txt_color" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="0.50"
+                            android:background="@drawable/radio_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:padding="@dimen/activity_horizontal_margin_half"
+                            android:text="Rent"
+                            android:textAppearance="@style/TextAppearance.FontPath"
+                            android:textColor="@drawable/radio_txt_color" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+
+                    android:orientation="vertical"
+                    android:paddingTop="8dip">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:text="City"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        android:textColor="#000" />
+
+                    <Spinner
+                        android:id="@+id/auto_city_dd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:textAppearance="@style/TextAppearance.FontPath" />
+
+
+                </LinearLayout>
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:text="Locality"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        android:textColor="#000" />
+
+                    <Spinner
+                        android:id="@+id/auto_localities"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:textAppearance="@style/TextAppearance.FontPath" />
+
+
+                </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingTop="8dip">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:text="Locality"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        android:textColor="#000" />
+
+                    <Spinner
+                        android:id="@+id/auto_loc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:textAppearance="@style/TextAppearance.FontPath" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="8dip">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:text="Property Type "
+                        android:textColor="#000" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_bg"
+                        android:gravity="center_vertical"
+                        android:textAppearance="@style/TextAppearance.FontPath">
+                        <!-- <include layout="@layout/property_type_radio"/>-->
+
+                        <Spinner
+                            android:id="@+id/propertytypespinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"></Spinner>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingTop="8dip">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:text="Project Name"
+                        android:textColor="#000" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_bg"
+                        android:gravity="center_vertical"
+                        android:textAppearance="@style/TextAppearance.FontPath">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/auto_projectname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:hint="Select Project"
+                            android:padding="5dip"
+                            android:singleLine="true"
+                            android:textAppearance="@style/TextAppearance.FontPath" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bedroom_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="8dip">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:text="Bedroom"
+                        android:textColor="#000" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+
+
+                        android:background="@drawable/edittext_bg"
+                        android:gravity="center_vertical"
+                        android:textAppearance="@style/TextAppearance.FontPath">
+
+                        <Spinner
+                            android:id="@+id/bedroomnospinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"></Spinner>
+                    </LinearLayout>
+
+                    <!-- <include layout="@layout/numofbedroom_radio"/>-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/role_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="8dip"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:text="Role"
+                        android:textColor="#000" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+
+
+                        android:background="@drawable/edittext_bg"
+                        android:gravity="center_vertical"
+                        android:textAppearance="@style/TextAppearance.FontPath">
+
+                        <Spinner
+                            android:id="@+id/rolespinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"></Spinner>
+                    </LinearLayout>
+
+                    <!-- <include layout="@layout/numofbedroom_radio"/>-->
+
+                </LinearLayout>
+
+
+                <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:text="Budget"
+
+                        android:textColor="#000" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_bg"
+                        android:gravity="center_vertical"
+                        android:textAppearance="@style/TextAppearance.FontPath">
+
+
+                        <Spinner
+                            android:id="@+id/ps_spiner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"></Spinner>
+                    </LinearLayout>
+
+                    <!-- <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:weightSum="1">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:weightSum="1">
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_weight="0.50"
+                     android:layout_height="match_parent"
+                     android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Min"/>
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/price_seek_min_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="10 lakh"/>
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_weight="0.50"
+                     android:layout_height="match_parent"
+                     android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Max"/>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/price_seek_max_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="10 lakh"/>
+
+                 </LinearLayout>
+
+              </LinearLayout>
+
+              <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                  android:id="@+id/price_rangeSeekbar"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  app:corner_radius="10"
+                  app:min_value="9"
+                  app:max_value="1001"
+                  app:gap="11"
+                  app:bar_color="#8990C4"
+                  app:bar_highlight_color="#2434AD"
+                  app:left_thumb_color="#1A246D"
+                  app:right_thumb_color="#1A246D"
+                  app:left_thumb_color_pressed="@color/button_color"
+                  app:right_thumb_color_pressed="@color/button_color"
+                  app:data_type="_integer"/>
+
+           </LinearLayout>
+-->
+                </LinearLayout>
+
+                <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="8dip">
+
+                    <!-- <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginBottom="5dip"
+                         android:text="Age Of Building"
+
+                         android:textColor="#000" />-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_bg"
+                        android:gravity="center_vertical"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        android:visibility="gone">
+
+
+                        <Spinner
+                            android:id="@+id/p_agebuilding_spiner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+
+
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dip"
+                            android:layout_marginBottom="3dip"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:text="Budget"
+                                android:textAppearance="@style/TextAppearance.FontPath"
+                                android:textColor="#000" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:orientation="vertical">
+
+
+                                <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                                    android:id="@+id/rq_price_rangeSeekbar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:bar_color="#8990C4"
+                                    app:bar_highlight_color="#595a5c"
+                                    app:corner_radius="1"
+                                    app:data_type="_integer"
+                                    app:gap="10"
+                                    app:left_thumb_image="@drawable/ic_circle"
+                                    app:left_thumb_image_pressed="@drawable/ic_circle_pressed"
+                                    app:max_value="5000"
+                                    app:min_value="10"
+                                    app:right_thumb_image="@drawable/ic_circle"
+                                    app:right_thumb_image_pressed="@drawable/ic_circle_pressed" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center|left">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:text="Min "
+                                            android:textAppearance="@style/TextAppearance.FontPath" />
+
+                                        <TextView
+
+                                            android:id="@+id/rq_price_seek_min_text"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:text="10 Lac"
+                                            android:textAppearance="@style/TextAppearance.FontPath" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center|right">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:text="Max "
+                                            android:textAppearance="@style/TextAppearance.FontPath" />
+
+                                        <TextView
+
+                                            android:id="@+id/rq_price_seek_max_text"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:text="10 lac"
+                                            android:textAppearance="@style/TextAppearance.FontPath" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dip"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dip"
+                            android:background="@color/dropback" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="5dip"
+                            android:layout_marginBottom="3dip"
+                            android:layout_weight="2.5"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:text="Area(Sq-Ft)"
+                                android:textColor="#000" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+
+                                <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                                    android:id="@+id/rq_area_rangeSeekbar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:bar_color="#8990C4"
+                                    app:bar_highlight_color="#595a5c"
+                                    app:corner_radius="10"
+                                    app:data_type="_integer"
+
+                                    app:left_thumb_image="@drawable/ic_circle"
+                                    app:left_thumb_image_pressed="@drawable/ic_circle_pressed"
+                                    app:max_value="5000"
+                                    app:min_value="0"
+                                    app:right_thumb_image="@drawable/ic_circle"
+                                    app:right_thumb_image_pressed="@drawable/ic_circle_pressed" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:gravity="center|left">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:text="Min "
+                                            android:textAppearance="@style/TextAppearance.FontPath" />
+
+                                        <TextView
+                                            android:id="@+id/rq_area_seek_min_text"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:text="10 Sq-ft"
+
+                                            android:textAppearance="@style/TextAppearance.FontPath" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:gravity="center|right">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:text="Max "
+                                            android:textAppearance="@style/TextAppearance.FontPath" />
+
+                                        <TextView
+                                            android:id="@+id/rq_area_seek_max_text"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:text="10 Sq-ft"
+
+                                            android:textAppearance="@style/TextAppearance.FontPath" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <!-- <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:weightSum="1">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:weightSum="1">
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_weight="0.50"
+                     android:layout_height="match_parent"
+                     android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Min"/>
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/price_seek_min_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="10 lakh"/>
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_weight="0.50"
+                     android:layout_height="match_parent"
+                     android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Max"/>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/price_seek_max_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="10 lakh"/>
+
+                 </LinearLayout>
+
+              </LinearLayout>
+
+              <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                  android:id="@+id/price_rangeSeekbar"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  app:corner_radius="10"
+                  app:min_value="9"
+                  app:max_value="1001"
+                  app:gap="11"
+                  app:bar_color="#8990C4"
+                  app:bar_highlight_color="#2434AD"
+                  app:left_thumb_color="#1A246D"
+                  app:right_thumb_color="#1A246D"
+                  app:left_thumb_color_pressed="@color/button_color"
+                  app:right_thumb_color_pressed="@color/button_color"
+                  app:data_type="_integer"/>
+
+           </LinearLayout>
+-->
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="bottom"
+        android:layout_weight=".07">
+
+        <Button
+
+            android:id="@+id/srach_property_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/button_color"
+            android:text="Search"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+</LinearLayout>

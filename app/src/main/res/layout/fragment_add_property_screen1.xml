@@ -1,0 +1,176 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.doomshell.property_bull.AddProperty_screen1"
+    android:background="@drawable/post_bg">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:weightSum="1"
+
+       android:orientation="vertical">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="0.50"
+           android:gravity="center"
+           android:orientation="vertical">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/post_home_round"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="#000"
+               android:layout_gravity="center"
+               android:textAppearance="@style/TextAppearance.FontPath"
+               android:text="So, You Are Looking To Post \n \t \t \t Your Property For"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:weightSum="2"
+               android:orientation="horizontal"
+               android:gravity="center"
+               android:layout_marginTop="2dp">
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="2dp"
+                   android:layout_weight="0.20">
+
+
+               </LinearLayout>
+
+               </LinearLayout>
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="0.50"
+           android:weightSum="1"
+           android:orientation="vertical"
+           android:padding="@dimen/activity_horizontal_margin">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="0.50"
+               android:padding="@dimen/activity_horizontal_margin"
+               android:layout_gravity="center"
+               android:orientation="vertical"
+               android:weightSum="1">
+
+               <RadioGroup
+                   android:id="@+id/rg_postSC1_option1"
+                   android:layout_gravity="center_horizontal"
+                   android:gravity="center_horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="0.50"
+                   android:weightSum="1"
+                   android:orientation="horizontal"
+                   android:padding="5dp">
+
+                   <RadioButton
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:textAppearance="@style/TextAppearance.FontPath"
+                       android:text="Sell"
+                       android:background="@drawable/radio_selector"
+                       android:textColor="@drawable/radio_txt_color"
+                       android:button="@null"
+                       android:layout_weight="0.50"
+                       android:gravity="center"
+                       android:layout_marginRight="5dp"
+                       />
+
+                   <RadioButton
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:text="Rent"
+                       android:textAppearance="@style/TextAppearance.FontPath"
+                       android:background="@drawable/radio_selector"
+                       android:textColor="@drawable/radio_txt_color"
+                       android:button="@null"
+                       android:layout_weight="0.50"
+                       android:layout_marginLeft="5dp"
+                       android:gravity="center"
+                       />
+
+               </RadioGroup>
+
+
+               <RadioGroup
+                   android:id="@+id/rg_postSC1_option2"
+                   android:layout_gravity="center_horizontal"
+                   android:gravity="center_horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="0.50"
+                   android:weightSum="1"
+                   android:orientation="horizontal"
+                   android:padding="5dp">
+
+                   <RadioButton
+                       android:layout_marginRight="5dp"
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:text="Residential"
+                       android:textAppearance="@style/TextAppearance.FontPath"
+                       android:background="@drawable/radio_selector"
+                       android:textColor="@drawable/radio_txt_color"
+                       android:button="@null"
+                       android:layout_weight="0.50"
+                       android:gravity="center"
+                       />
+
+                   <RadioButton
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:text="Commercial"
+                       android:textAppearance="@style/TextAppearance.FontPath"
+                       android:background="@drawable/radio_selector"
+                       android:textColor="@drawable/radio_txt_color"
+                       android:button="@null"
+                       android:layout_weight="0.50"
+                       android:layout_marginLeft="5dp"
+                       android:gravity="center"
+                       />
+
+               </RadioGroup>
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="0.50"
+               android:padding="@dimen/activity_horizontal_margin"
+               android:layout_gravity="center"
+               android:orientation="vertical"
+               android:gravity="center">
+
+               <Button
+                   android:id="@+id/add_sc1_next"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textAppearance="@style/TextAppearance.FontPath"
+                   android:text="Next"
+                   android:background="@color/button_color"
+                   android:textColor="#fff"/>
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+
+</FrameLayout>
